@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja amostra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="icon" type="icon" href="imagens/logo.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="pri-nav">
+                <div class="parteI-nav">
+                    <div class="logo"><img src="imagens/logo.png" alt=""><div class="logo-texto">sports</div></div>
+                </div>
+                <div class="pesquisar">
+                    <div class="pesquisar-icone"><img src="imagens/lupa.png" alt=""></div>
+                    <div class="pesquisar-input">
+                        <input type="text" placeholder="pesquisar...">
+                    </div>
+                </div>
+                <div class="carrinhoEcontato">
+                    <div class="contato">
+                        <div class="contato-icone"><a href="https://wa.me/5584996002433"><img src="imagens/chamada-telefonica.png" alt=""> Fale conosco</a></div>
+                    </div>
+                    <div class="carrinho">
+                        <img src="imagens/carrinho-de-compras.png" alt="">
+                        <div class="contador" id="contador-carrinho">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="seg-nav">
+               
+            </div>
+        </nav>
+    </header>
+    <div class="fotocapa"></div>
+    <div class="fotos-header">
+        <img src="camisas/barcelona.jpeg" alt="">
+        <img src="camisas/bayern.jpg" alt="">
+        <img src="camisas/flamengofeminino.jpeg" alt="">
+        <img src="camisas/manchestercity.jpg" alt="">
+        <img src="camisas/milan.jpg" alt="">
+    </div>
+    <div class="seg-nav">
+               
+    </div>
+
+    <div class="produtos-container" id="produtos-container"></div>
+
+   <!-- Modal do Carrinho -->
+   <div class="modal" id="modal-carrinho">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Carrinho de Compras</h2>
+            <span class="close-btn" id="close-modal">&times;</span>
+        </div>
+        <div id="carrinho-itens"></div>
+        <div class="total" id="total-preco">Total: R$ 0,00</div>
+        <a href="#" id="finalizar-compra" class="finalizar-btn">Finalizar Compra via WhatsApp</a>
+    </div>
+</div>
+
+<footer>
+    <div class="footer1">
+        <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+    </div>
+    <div class="footer2">
+        <div class="logo-footer">
+            <img src="imagens/logo.png" alt="Logo da Empresa">
+        </div>
+        <div class="social-links">
+            <div class="icones">
+                <img src="imagens/telefone.png" alt="">
+            <a href="https://tel:5584996002433" target="_blank">celular</a>
+            </div>
+            <div class="icones">
+                <img src="imagens/whatsapp.png" alt="">
+            <a href="https://wa.me/5584996002433" target="_blank">WhatsApp</a>
+            </div>
+            <div class="icones">
+                <img src="imagens/instagram.png" alt="">
+            <a href="https://instagram.com/alison_tkd" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+<script src="script.js"></script>
+</html>

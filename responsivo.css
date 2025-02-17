@@ -1,0 +1,65 @@
+@media screen and (max-width: 800px) {
+    .pesquisar{
+         display: none;
+    }
+    .contato{
+         display: none;
+    }
+    
+    .menu-responsivo{
+        padding: 10px;
+    }
+    .menu-responsivo img{
+        width: 50px;
+    }
+
+    .pri-nav{
+        width: 100%;
+    }
+
+    .logo{
+        padding-right: 100px;
+    }
+    .seg-nav ul{
+        display: none;
+    }
+    .seg-nav{
+        height: 10px;
+    }
+    .carrinho{
+        display: flex;
+    }
+    .produtos-container {
+        grid-template-columns: repeat(2, 1fr); /* Exibe dois cards por linha */
+        gap: 15px; /* Ajusta o espaçamento entre os cards */
+    }
+
+    .produto-card img {
+        height: 150px; /* Reduz a altura das imagens para se adaptar */
+    }
+    .carrinho{
+        display: flex;
+        position: fixed;
+        background-color: #ffffff;
+    }
+    .produto-precoAdd{
+        display: block;
+    }
+    .produto-precoAdd button {
+        padding: 10px;
+        border: .2px solid #00ADEF;
+        background: transparent;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .produto-precoAdd img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .menu-responsivo{
+        display: none;
+    }
+}
