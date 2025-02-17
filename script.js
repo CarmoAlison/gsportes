@@ -92,8 +92,20 @@ function atualizarCarrinho() {
 
     document.getElementById('total-preco').textContent = `Total: R$ ${total.toFixed(2)}`;
     document.getElementById('contador-carrinho').textContent = carrinho.length;
-    document.getElementById('finalizar-compra').href = `https://wa.me/5584996002433?text=Ol%C3%A1!%20Gostaria%20de%20comprar%20os%20seguintes%20produtos:%20${encodeURIComponent(JSON.stringify(carrinho))}`;
+
+    // Gera a mensagem do WhatsApp
+    let mensagem = "Olá, vim do site Gsportes!\n";
+    mensagem += "Fiquei interessado nos seus produtos. Gostaria de saber se ainda tem disponível:\n";
+
+    carrinho.forEach(item => {
+        mensagem += `\nNome: ${item.nome}\nPreço: R$ ${item.preco.toFixed(2)}\nQuantidade: ${item.quantidade}\nAinda teria no estoque?\n`;
+    });
+
+    // Cria a URL do WhatsApp
+    const urlWhatsApp = `https://wa.me/5584996002433?text=${encodeURIComponent(mensagem)}`;
+    document.getElementById('finalizar-compra').href = urlWhatsApp;
 }
+
 
 function alterarQuantidade(produtoId, quantidade) {
     const item = carrinho.find(p => p.id === produtoId);

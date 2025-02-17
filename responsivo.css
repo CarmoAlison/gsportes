@@ -63,3 +63,12 @@
         display: none;
     }
 }
+@media screen and (max-width: 500px) {
+    .fotocapa{
+        width: 100%;
+        height: 400px;
+        background-image: url("imagens/capa\ \(360\ x\ 360\ px\).png");
+        background-size: cover;
+        background-position: center;
+    }
+}
